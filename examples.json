@@ -1,5 +1,69 @@
 {
-    "/api/get-text": [],
+    "/api/get-text": [
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "A valid base64 encoded image."
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "result": {
+                        "text": "ser had opened a shop that\nellar. Every night, mice came\ninto the shop. They ate apples\nand did not spare the\nher. No goods that were in the\nall intrusive rodents between\nng as there was noise in the\nre driving by, the mice still\nBut as soon as the old clock\nmidnight and it became quiet\nin droves, enjoyed the sweet\nasts, whose remains filled the\nrorning when he entered the\nhimself against the mice. At\n\u2018the shop.\n\n"
+                    },
+                    "success": true
+                }
+            }
+        },
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "An invalid base64 encoded image."
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "message": "Invalid base64_image."
+                    },
+                    "success": false
+                }
+            }
+        },
+        {
+            "request": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "base64_image": "A non-image file encoded in base64."
+                }
+            },
+            "response": {
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "message": "Invalid base64_image."
+                    },
+                    "success": false
+                }
+            }
+        }
+    ],
     "/api/get-bboxes": [
         {
             "request": {

@@ -1,6 +1,8 @@
 # Tesseract OCR Assignment API Tester
 
-This repository contains a test suite for the Tesseract OCR API.
+This repository contains a test suite for the Tesseract OCR API developed for the full-stack developer assignment at the Vision and Graphics Lab, Dept. of CSE, IIT Delhi.
+
+
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
